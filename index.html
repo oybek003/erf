@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+
+    <header class="max-w-screen-lg mx-auto border-b border-gray-200">
+        <nav class="flex items-center justify-between py-4">
+            <div class="flex items-center gap-2">
+                <img src="img/Link → main_logo.svg.png" alt="Logo" class="h-10">
+                <div class="flex items-center justify-center gap-3 bg-pink-600 text-white px-4 py-2 rounded-full">
+                    <img src="img/location.svg.png" alt="Location" class="h-5">
+                    <h3 class="text-sm"><a href="https://www.google.com/maps">Укажите свой адрес</a></h3>
+                </div>
+            </div>
+            <ul class="flex gap-6 text-lg">
+                <li class="group-hover:text-red-400 text-red-500">О нас</li>
+                <li>Меню</li>
+                <li>Акции</li>
+                <li>Филиалы</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+        <div class="flex justify-center">
+            <img src="img/burger.png" alt="Header Image" class="max-w-full rounded-xl">
+        </div>
+    </header>
+
+
+    <section class="max-w-3xl mx-auto py-16">
+        <h3 class="text-4xl text-center mb-8">Сеты</h3>
+        
+        <div class="flex gap-8">
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/Qiyqiriq Set.png" alt="Qiyqiriq Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4 font-sans-17">Qiyqiriq сет</p>
+                <p class="text-xl text-pink-600">45 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 border-b text-2xl" onclick="orderSet()" >+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/snek.png" alt="Snek Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Снек сет</p>
+                <p class="text-xl text-pink-600">79 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet2()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/klasik.png" alt="Klasik Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Классик сет</p>
+                <p class="text-xl text-pink-600">34 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet3()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/donger.png" alt="Longer Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Лонгер рингс сет</p>
+                <p class="text-xl text-pink-600">45 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-11 mt-5 text-2xl" onclick="orderSet4()">+</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto py-16">
+        
+        <div class="flex gap-8">
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/big.png" alt="Биг сет" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4 font-sans-17">Биг сет</p>
+                <p class="text-xl text-pink-600">62 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet5()">+</button>
+            </div>
+
+<div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/laster.png" alt="Лестер сет" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Лестер сет</p>
+                <p class="text-xl text-pink-600">53 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet6()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/skul.png" alt="Klasik Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Скул сет</p>
+                <p class="text-xl text-pink-600">36 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet7()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/bomba.png" alt="Комбо сет Большой" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Комбо сет Большой</p>
+                <p class="text-xl text-pink-600">20 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-11 mt-5 text-2xl" onclick="orderSet8()">+</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="max-w-3xl mx-auto py-16">
+        
+        <div class="flex gap-8">
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/do'stlat 1x.png" alt="Qiyqiriq Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4 font-sans-17">Do’stlar 1х</p>
+                <p class="text-xl text-pink-600">43 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet9()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/do'stlar 2x.png" alt="Snek Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Do’stlar 2х</p>
+                <p class="text-xl text-pink-600">79 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet10()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/do'star 4x.png" alt="Klasik Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Do’stlar 4х</p>
+                <p class="text-xl text-pink-600">149 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-12 mt-12 text-2xl" onclick="orderSet11()">+</button>
+            </div>
+
+            <div class="w-1/4 p-4 bg-white rounded-lg shadow-lg">
+                <img src="img/o'stry 1x.png" alt="Longer Set" class="w-full h-40 object-cover rounded-lg">
+                <p class="text-lg mt-4">Острый Do’stlar 1х</p>
+                <p class="text-xl text-pink-600">43 000 сум</p>
+                <button class="w-10 h-10 bg-pink-600 text-white rounded-xl ml-11 mt-5 text-2xl" onclick="orderSet12()">+</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-6">
+        <div class="flex items-center justify-between max-w-screen-lg mx-auto text-white">
+            <p class="text-black">2024 Все права защищены</p>
+            <img src="img/Link → main_logo.svg.png" alt="Logo" class="h-8">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
